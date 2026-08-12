@@ -1,0 +1,19 @@
+# Ignorar carpetas de dependencias en cualquier subdirectorio
+**/vendor/
+**/node_modules/
+
+# Ignorar variables de entorno
+**/.env
+**/.env.backup
+**/.env.production
+
+# Ignorar archivos del sistema operativo
+**/.DS_Store
+Thumbs.db
+
+# Ignorar logs y almacenamiento temporal
+**/storage/logs/*.log
+**/storage/framework/cache/data/*
+**/storage/framework/sessions/*
+**/storage/framework/views/*
+**/storage/framework/testing/*

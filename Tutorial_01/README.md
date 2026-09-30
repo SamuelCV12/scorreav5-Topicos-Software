@@ -87,7 +87,9 @@ DB_USERNAME=samuelcorrea
 ### 2. 💾 Base de Datos y Usuario MySQL
 
 #### Base de Datos Creada
-![Base de Datos](https://github.com/user-attachments/assets/20581fa9-c9fa-4151-bb68-c96849467274
+![Base de Datos](https://github.com/user-attachments/assets/40b73667-65f7-4a9e-bf78-d45037f6a5cd
+)
+
 
 *Base de datos `samuelcorrea` creada correctamente*
 

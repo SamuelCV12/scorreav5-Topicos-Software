@@ -2,7 +2,6 @@
 
 **Estudiante**: Samuel Correa  
 **Identificador**: samuel-correa  
-**Fecha**: Septiembre 2026  
 
 ## 📋 Descripción del Proyecto
 
@@ -67,127 +66,63 @@ DB_USERNAME=samuelcorrea
 ### 1. 🌐 Aplicaciones Web Funcionando
 
 #### Laravel Ejecutándose
-![Laravel Home](evidencias/01-laravel-home.png)
+![Laravel Home](https://github.com/user-attachments/assets/3630cb96-f3e9-47e9-bfc1-ee23a1a05c5c
+)
 *Laravel funcionando correctamente en el puerto 8081*
 
 #### phpMyAdmin Accesible
-![phpMyAdmin Login](evidencias/02-phpmyadmin-login.png)
+![phpMyAdmin Login](https://github.com/user-attachments/assets/c522b54a-f9a0-4102-9c59-a8d6b344ddf2
+)
 *phpMyAdmin accesible en el puerto 9081*
 
 #### Funcionalidades Laravel
-![Productos Laravel](evidencias/03-laravel-products.png)
+![Productos Laravel](https://github.com/user-attachments/assets/69f2f895-30e9-497a-a2f7-be8415b3588d
+)
 *Lista de productos en Laravel*
 
-![API JSON](evidencias/04-laravel-api.png)
+![API JSON](https://github.com/user-attachments/assets/b37ddbb2-6bc4-4179-93f3-a62e7285bdc5
+)
 *API REST funcionando correctamente*
 
 ### 2. 💾 Base de Datos y Usuario MySQL
 
 #### Base de Datos Creada
-![Base de Datos](evidencias/05-mysql-database.png)
+![Base de Datos](https://github.com/user-attachments/assets/20581fa9-c9fa-4151-bb68-c96849467274
+
 *Base de datos `samuelcorrea` creada correctamente*
 
 #### Tablas Generadas por Migraciones
-![Tablas MySQL](evidencias/06-mysql-tables.png)
+![Tablas MySQL](https://github.com/user-attachments/assets/79c44993-0009-4243-a9cb-e9453fd98a83
+)
 *6 tablas creadas automáticamente por Laravel*
 
 #### Usuario MySQL Configurado
-![Usuario MySQL](evidencias/07-mysql-user.png)
+![Usuario MySQL](https://github.com/user-attachments/assets/01e72f32-a789-4279-a2b8-66d1ff0d9750
+)
 *Usuario `samuelcorrea` con permisos correctos*
 
 #### Datos Almacenados
-![Datos Productos](evidencias/08-mysql-data.png)
+![Datos Productos](https://github.com/user-attachments/assets/10f4d808-4d45-4ac1-b434-77b2d12cea4c
+)
 *Datos guardados correctamente en la base*
 
 ### 3. 🔄 Persistencia de Datos
 
 #### Comandos de Reinicio
-![Terminal Down](evidencias/09-docker-down.png)
+![Terminal Down](https://github.com/user-attachments/assets/c1afcf89-6616-4698-b176-10940ab59968
+)
 *Deteniendo contenedores para probar persistencia*
 
-![Terminal Up](evidencias/10-docker-up.png)
+![Terminal Up](https://github.com/user-attachments/assets/6a59732d-c055-44b6-915b-d406908c6be8
+)
 *Reiniciando contenedores*
 
 #### Verificación Post-Reinicio
-![Laravel Post-Restart](evidencias/11-laravel-after-restart.png)
+![Laravel Post-Restart](https://github.com/user-attachments/assets/4756e13b-2c4f-464d-8831-aa3f89c68bd5
+)
 *Laravel funcionando después del reinicio*
 
-![Datos Persistentes](evidencias/12-data-persistent.png)
+![Datos Persistentes](https://github.com/user-attachments/assets/308f6089-92b1-46ea-b4f5-70dea381ebff
+)
 *Los datos siguen existiendo en MySQL*
 
-## 🐳 Comandos Docker Utilizados
-
-### Construcción de Imagen
-```bash
-docker build -t laravel-samuel-correa:1.0 .
-docker run --rm laravel-samuel-correa:1.0 php artisan key:generate --show
-```
-
-### Despliegue de Infraestructura
-```bash
-docker compose -f compose.infra.yaml up -d --wait --wait-timeout 240
-docker compose -f compose.infra.yaml ps
-```
-
-### Despliegue de Aplicación
-```bash
-docker compose -f compose.app.yaml up -d
-docker compose -f compose.app.yaml exec --user www-data app php artisan migrate --force
-```
-
-### Verificación de Persistencia
-```bash
-docker compose -f compose.app.yaml down
-docker compose -f compose.infra.yaml down
-docker compose -f compose.infra.yaml up -d --wait --wait-timeout 240
-docker compose -f compose.app.yaml up -d
-```
-
-## 📈 Estado Final del Despliegue
-
-### Contenedores Activos
-- ✅ `samuel-correa-infra-mysql-1` - **Healthy**
-- ✅ `samuel-correa-infra-phpmyadmin-1` - **Running** 
-- ✅ `samuel-correa-app-app-1` - **Running**
-
-### Base de Datos
-- ✅ Base: `samuelcorrea`
-- ✅ Usuario: `samuelcorrea` 
-- ✅ Tablas: 6 (users, products, comments, jobs, cache, personal_access_tokens)
-- ✅ Persistencia: Garantizada con volúmenes Docker
-
-### Red Docker
-- ✅ Red: `samuel-correa-net`
-- ✅ Aislamiento: Completo de otros estudiantes
-- ✅ Comunicación interna: Funcional entre contenedores
-
-## 🔐 Credenciales de Acceso
-
-### phpMyAdmin (Root)
-- **Usuario**: `root`
-- **Contraseña**: `8b4b01270caa2db053062647edcac0c295316b2048808f45`
-
-### Base de Datos Aplicación
-- **Usuario**: `samuelcorrea`  
-- **Contraseña**: `4609a848bce08ccbbc29367dd5be8f36c8709b1adea059e3`
-- **Base**: `samuelcorrea`
-
-## 📝 Conclusiones
-
-El Tutorial 05 se ha completado exitosamente con todos los objetivos cumplidos:
-
-1. ✅ **Despliegue en AWS EC2** con Amazon Linux 2023
-2. ✅ **Imagen Docker personalizada** para Laravel
-3. ✅ **Infraestructura separada** (MySQL + phpMyAdmin)  
-4. ✅ **Aplicación independiente** con su propia red
-5. ✅ **Persistencia de datos** verificada
-6. ✅ **URLs públicas** funcionando correctamente
-7. ✅ **Coexistencia** con otros estudiantes en la misma instancia
-
-El despliegue demuestra el uso correcto de Docker Compose para aplicaciones multi-contenedor, separación de responsabilidades, manejo de redes Docker y persistencia de datos en entornos de producción.
-
----
-
-**Repositorio**: https://github.com/SamuelCV12/scorreav5-Topicos-Software  
-**Tutorial**: 05 - Docker Deployment  
-**Estado**: ✅ Completado

@@ -44,15 +44,15 @@ APP_IMAGE=laravel-samuel-correa:1.0
 APP_PORT=8081
 PMA_PORT=9081
 MYSQL_PORT=33061
-APP_URL=http://100.27.190.73:8081
+APP_URL=http://3.91.71.33:8081
 DB_DATABASE=samuelcorrea
 DB_USERNAME=samuelcorrea
 ```
 
 ## 🌐 URLs de Acceso
 
-- **Laravel**: http://100.27.190.73:8081
-- **phpMyAdmin**: http://100.27.190.73:9081
+- **Laravel**: http://3.91.71.33:8081
+- **phpMyAdmin**: http://3.91.71.33:9081
 
 ### Rutas de Prueba
 - `/` - Página principal

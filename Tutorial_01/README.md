@@ -87,11 +87,13 @@ DB_USERNAME=samuelcorrea
 ### 2. 💾 Base de Datos y Usuario MySQL
 
 #### Base de Datos Creada
-![Base de Datos](evidencias/05-mysql-database.png)
+![Base de Datos](https://github.com/user-attachments/assets/20581fa9-c9fa-4151-bb68-c96849467274
+
 *Base de datos `samuelcorrea` creada correctamente*
 
 #### Tablas Generadas por Migraciones
-![Tablas MySQL](evidencias/06-mysql-tables.png)
+![Tablas MySQL](https://github.com/user-attachments/assets/79c44993-0009-4243-a9cb-e9453fd98a83
+)
 *6 tablas creadas automáticamente por Laravel*
 
 #### Usuario MySQL Configurado
@@ -100,22 +102,27 @@ DB_USERNAME=samuelcorrea
 *Usuario `samuelcorrea` con permisos correctos*
 
 #### Datos Almacenados
-![Datos Productos](evidencias/08-mysql-data.png)
+![Datos Productos](https://github.com/user-attachments/assets/10f4d808-4d45-4ac1-b434-77b2d12cea4c
+)
 *Datos guardados correctamente en la base*
 
 ### 3. 🔄 Persistencia de Datos
 
 #### Comandos de Reinicio
-![Terminal Down](evidencias/09-docker-down.png)
+![Terminal Down](https://github.com/user-attachments/assets/c1afcf89-6616-4698-b176-10940ab59968
+)
 *Deteniendo contenedores para probar persistencia*
 
-![Terminal Up](evidencias/10-docker-up.png)
+![Terminal Up](https://github.com/user-attachments/assets/6a59732d-c055-44b6-915b-d406908c6be8
+)
 *Reiniciando contenedores*
 
 #### Verificación Post-Reinicio
-![Laravel Post-Restart](evidencias/11-laravel-after-restart.png)
+![Laravel Post-Restart](https://github.com/user-attachments/assets/4756e13b-2c4f-464d-8831-aa3f89c68bd5
+)
 *Laravel funcionando después del reinicio*
 
-![Datos Persistentes](evidencias/12-data-persistent.png)
+![Datos Persistentes](https://github.com/user-attachments/assets/308f6089-92b1-46ea-b4f5-70dea381ebff
+)
 *Los datos siguen existiendo en MySQL*
 

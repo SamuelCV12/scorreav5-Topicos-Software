@@ -15,18 +15,6 @@ Despliegue completo de una aplicación Laravel con MySQL y phpMyAdmin utilizando
 - **Red Docker**: `samuel-correa-net` (aislada)
 - **Volúmenes**: Persistencia de datos garantizada
 
-## 📂 Estructura de Archivos
-
-```
-Tutorial_01/example-app/
-├── Dockerfile              # Imagen Laravel con PHP 8.4 y Apache
-├── .dockerignore           # Exclusiones para el build
-├── compose.infra.yaml      # MySQL y phpMyAdmin
-├── compose.app.yaml        # Aplicación Laravel
-├── evidencias/             # Screenshots del despliegue
-└── README.md              # Esta documentación
-```
-
 ## 🚀 Configuración de Despliegue
 
 ### Puertos Asignados (Fila 1)
